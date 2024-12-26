@@ -10,6 +10,7 @@ I am very grateful for the opportunity to complete the test and appreciate the r
 2. I didn't cache data in state manager because Next.js has a built-in cache system that is more efficient and easier to manage.
 3. I added a custom hook to fetch authors and cache them in the state manager to reuse them in the AuthorSelect component.
 4. I used the features slice pattern to structure the code and make it more modular and easier to maintain.
+5. I didn't add author field to Review form because as usual author is a user and should be added during crieting or updating.
 
 ## Features
 
