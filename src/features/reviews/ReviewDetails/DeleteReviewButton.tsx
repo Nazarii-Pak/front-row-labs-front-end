@@ -41,7 +41,7 @@ const DeleteReviewButton: FC<DeleteReviewButtonProps> = ({ id }) => {
 
   return (
     <>
-      <button className="btn w-fit" onClick={handleOpenModal}>
+      <button className="btn btn-outline w-fit" onClick={handleOpenModal}>
         Delete
       </button>
       <dialog ref={ref} className="modal">

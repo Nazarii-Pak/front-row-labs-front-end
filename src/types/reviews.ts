@@ -6,6 +6,10 @@ export type Review = {
   author: string;
 };
 
+export type UpdatedMealReview = Review & {
+  components: Review[];
+};
+
 export type SearchParams = {
   page?: string;
   search?: string;
