@@ -1,17 +1,12 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Sora } from 'next/font/google';
 import ClientProvider from '@/Providers/ClientProvider';
 import { CommonStoreProvider } from '@/Providers/commonStoreProvider';
 import Header from '@/components/Header';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const sora = Sora({
+  variable: '--font-sora',
   subsets: ['latin'],
 });
 
@@ -27,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-dvh`}>
+      <body className={`${sora.variable} antialiased flex flex-col min-h-dvh`}>
         <Header />
         <div className="p-4 flex-1">
           <CommonStoreProvider>
